@@ -35,19 +35,16 @@ for row in range(2, 120):
         xls_ws.cell(row, col).style = cell_bd
 
 # 调整单元格字体
-cell_ft = NamedStyle(name="cell_ft")
-cell_ft.font = Font(size=10, bold=True)
-
 for col in range(1, 8):
-    xls_ws.cell(row=1, column=col).font = cell_ft
+    xls_ws.cell(row=1, column=col).font = Font(size=10, bold=True)
 
 for row in range(1, 120):
-    xls_ws.cell(row=row, column=col).font = cell_ft
-
-cell_ft_else = NamedStyle(name="cell_ft_else")
-cell_ft_else.font = Font(size=12)
+    xls_ws.cell(row=row, column=1).font = Font(size=10, bold=True)
 
 for row in range(2, 120):
-    xls_ws.cell(row=row, column=2).font = cell_ft_else
+    xls_ws.cell(row=row, column=2).font = Font(size=12)
+
+
+
 
 xls_wb.save('test.xlsx')
