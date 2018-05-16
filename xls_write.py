@@ -5,7 +5,7 @@
 
 import split_txt as st
 from openpyxl import load_workbook
-from openpyxl.styles import Border, Side, NamedStyle, Font, Fill
+from openpyxl.styles import Border, Side, NamedStyle, Font, Fill,Alignment
 import os
 
 # 读取excle模板
@@ -29,6 +29,7 @@ for row in range(2, 106):
 cell_bd = NamedStyle(name="cell_bd")
 bd = Side(style='thin', color='000000')
 cell_bd.border = Border(left=bd, top=bd, right=bd, bottom=bd)
+al = Alignment(horizontal="left",vertical="center")
 
 for row in range(2, 120):
     for col in range(3, 8):
@@ -43,6 +44,7 @@ for row in range(1, 120):
 
 for row in range(2, 120):
     xls_ws.cell(row=row, column=2).font = Font(size=12)
+
 
 
 
