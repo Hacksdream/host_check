@@ -15,7 +15,7 @@ def db_pick_content(start_flg, end_flg, secstart_flg, secend_flg):
     with open(txt_path, 'r') as tp:
         tp_rb = tp.read()
         #将多余与无关的内容剔除
-        tp_chg = re.sub('-|\d+(rowsselected.)|^Password:|^\\n', '', tp_rb)
+        tp_chg = re.sub('-|^Password:|^\\n', '', tp_rb)
         #匹配数据库检查项相关内容
         tp_pk = re.compile(start_flg + '(.*?)' + end_flg, re.S)
         tp_pkcontent = tp_pk.findall(tp_chg)
@@ -222,10 +222,10 @@ content.append(PSMSindex)
 PSMSconection = db_pick_content('PSMSDB1', 'CBBSDB3', 'checkconection', 'checktablespace')
 content.append(PSMSconection)
 
-PSMStablesp = db_pick_content('PSMSDB1', 'CBBSDB3', 'checktablespace', 'checktablepartition')
+PSMStablesp = db_pick_content('PSMSDB1', 'CBBSDB3', 'checktablespace', '7rowsselected.')
 content.append(PSMStablesp)
 
-PSMStablepart = db_pick_content('PSMSDB1', 'CBBSDB3', 'checktablepartition', 'CBBSDB3')
+PSMStablepart = db_pick_content('PSMSDB1', 'CBBSDB3', 'checktablepartition', '16rowsselected.')
 content.append(PSMStablepart)
 
 # #CBBS数据库
@@ -238,9 +238,8 @@ content.append(CBBSconection)
 CBBStablesp = db_pick_content('CBBSDB3', 'check process', 'checktablespace', 'checktablepartition')
 content.append(CBBStablesp)
 
-CBBStablepart = db_pick_content('CBBSDB3', 'check process', 'checktablepartition', 'check process')
+CBBStablepart = db_pick_content('CBBSDB3', 'check process', 'checktablepartition', '40rowsselected.')
 content.append(CBBStablepart)
 
 #网状网的状态检查
 wzw_status = wzw_stat()
-
