@@ -6,6 +6,5 @@ write the scrip to help me to quickly complete my work
 Objects:
 1 ordinary test
 2 excle
-
 ***********
 

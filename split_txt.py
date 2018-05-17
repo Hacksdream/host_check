@@ -3,11 +3,10 @@
 # @Time:2018/4/12
 # @File:split_txt.py
 
-
 import re
 import os
 
-txt_path = os.path.join(os.getcwd(), '20170426.txt')
+txt_path = os.path.join(os.getcwd(), 'host_check.txt')
 
 
 # 定义截取两个关键字之间的函数，截取有关数据库的巡检信息

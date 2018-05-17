@@ -4,6 +4,7 @@
 # @File:xls_write.py
 
 import os
+import time
 import split_txt as st
 from openpyxl import load_workbook
 from openpyxl.styles import Border, Side, NamedStyle, Font, PatternFill, Alignment
@@ -71,4 +72,12 @@ al_wzw = Alignment(horizontal="left", vertical="bottom")
 xls_ws['D119'] = st.wzw_status
 xls_ws.cell(row=119, column=4).alignment = al_wzw
 
-xls_wb.save('test.xlsx')
+#文件名格式化
+hour_now = time.strftime('%H',time.localtime(time.time()))
+if int(hour_now) > 12:
+    am_pm = "下午"
+else:
+    am_pm = "上午"
+file_save = "物联网内容计费主机巡检日报" + "_" + time.strftime("%Y%m%d",time.localtime(time.time())) + am_pm
+
+xls_wb.save(file_save)
