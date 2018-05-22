@@ -15,16 +15,23 @@ xls_wb = load_workbook(xls_path)
 xls_ws = xls_wb.worksheets[0]
 
 # 将检查结果填入相应的单元格中
-for row in range(2, 106):
-    cell = 'D' + str(row)
-    count = 0
-    for value in st.content:
-        value = value.replace('\n', '', 1)
-        xls_ws[cell] = value
-        st.content.pop(0)
-        count += 1
-        if count != 0:
+row_file = 2
+while True:
+    count_file = 0
+    if row_file > 94:
+        break
+    for val_file in st.content_filesys:
+        val_file = val_file.replace('\n','',1)
+        cell_file = xls_ws.cell(row=row_file,column=4)
+        cell_file.value = val_file
+        count_file += 1
+        st.content_filesys.pop(0)
+        if count_file != 0:
             break
+    row_file += 4
+
+
+
 
 # 填入结果后，有些单元格格式（线框，字体，填充颜色）有变化，需进行适当调整
 cell_bd = NamedStyle(name="cell_bd")
@@ -72,12 +79,23 @@ al_wzw = Alignment(horizontal="left", vertical="bottom")
 xls_ws['D119'] = st.wzw_status
 xls_ws.cell(row=119, column=4).alignment = al_wzw
 
+# row = 2
+# while True:
+#     if row > 97:
+#         break
+#     for count in range(3):
+#         row += 1
+#         cell_percentage = xls_ws.cell(row=row,column=4)
+#         cell_percentage.number_format = '0.00%'
+#     row += 1
+
 #文件名格式化
 hour_now = time.strftime('%H',time.localtime(time.time()))
 if int(hour_now) > 12:
     am_pm = "下午"
 else:
     am_pm = "上午"
-file_save = "物联网内容计费主机巡检日报" + "_" + time.strftime("%Y%m%d",time.localtime(time.time())) + am_pm
+file_name = ("物联网内容计费主机巡检日报" + "_" + time.strftime("%Y%m%d",time.localtime(time.time()))
+             + am_pm + ".xlsx")
 
-xls_wb.save(file_save)
+xls_wb.save(file_name)
