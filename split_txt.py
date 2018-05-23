@@ -53,9 +53,10 @@ def host_pick_content(secstart_flg, secend_flg,
     file_sys_space = ''.join(file_sys_space)
     # 截取cpu，内存，io的巡检信息
     host_load = re.search('(?P<cpu_load>\d+.\d+\s*%)\n(?P<mem_load>\d+.\d+%)\n(?P<IO_load>\d+.\d+%)', tp_result)
-    cpu_load = float(host_load.group('cpu_load').strip('%'))
-    mem_load = float(host_load.group('mem_load').strip('%'))
-    io_load = float(host_load.group('IO_load').strip('%'))
+    #为excle单元格格式百分比作准备
+    cpu_load = float(host_load.group('cpu_load').strip('%')) * 0.01
+    mem_load = float(host_load.group('mem_load').strip('%')) * 0.01
+    io_load = float(host_load.group('IO_load').strip('%')) * 0.01
     return file_sys_space, cpu_load, mem_load, io_load
 
 
@@ -187,6 +188,7 @@ content_filesys.append(file_JS5)
 content_perf.append(cpu_JS5)
 content_perf.append(mem_JS5)
 content_perf.append(io_JS5)
+
 file_JKX1, cpu_JKX1, mem_JKX1, io_JKX1 = host_pick_content('WLWJKX1', 'WLWJKX2')
 content_filesys.append(file_JKX1)
 content_perf.append(cpu_JKX1)
@@ -217,18 +219,6 @@ content_perf.append(cpu_JKX5)
 content_perf.append(mem_JKX5)
 content_perf.append(io_JKX5)
 
-# PSMS数据库
-PSMSindex = db_pick_content('PSMSDB1', 'CBBSDB3', 'checkindex', 'checkconection')
-content_db.append(PSMSindex)
-
-PSMSconection = db_pick_content('PSMSDB1', 'CBBSDB3', 'checkconection', 'checktablespace')
-content_db.append(PSMSconection)
-
-PSMStablesp = db_pick_content('PSMSDB1', 'CBBSDB3', 'checktablespace', '7rowsselected.')
-content_db.append(PSMStablesp)
-
-PSMStablepart = db_pick_content('PSMSDB1', 'CBBSDB3', 'checktablepartition', '16rowsselected.')
-content_db.append(PSMStablepart)
 
 # #CBBS数据库
 CBBSindex = db_pick_content('CBBSDB3', 'check process', 'checkindex', 'checkconection')
@@ -242,6 +232,19 @@ content_db.append(CBBStablesp)
 
 CBBStablepart = db_pick_content('CBBSDB3', 'check process', 'checktablepartition', '40rowsselected.')
 content_db.append(CBBStablepart)
+
+# PSMS数据库
+PSMSindex = db_pick_content('PSMSDB1', 'CBBSDB3', 'checkindex', 'checkconection')
+content_db.append(PSMSindex)
+
+PSMSconection = db_pick_content('PSMSDB1', 'CBBSDB3', 'checkconection', 'checktablespace')
+content_db.append(PSMSconection)
+
+PSMStablesp = db_pick_content('PSMSDB1', 'CBBSDB3', 'checktablespace', '7rowsselected.')
+content_db.append(PSMStablesp)
+
+PSMStablepart = db_pick_content('PSMSDB1', 'CBBSDB3', 'checktablepartition', '16rowsselected.')
+content_db.append(PSMStablepart)
 
 #网状网的状态检查
 wzw_status = wzw_stat()
