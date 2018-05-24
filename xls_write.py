@@ -108,3 +108,7 @@ file_name = ("物联网内容计费主机巡检日报" + "_" + time.strftime("%Y
              + am_pm + ".xlsx")
 
 xls_wb.save(file_name)
+
+#检查是否有异常信息出现
+st.pick_abnormal()
+

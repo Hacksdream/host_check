@@ -14,7 +14,7 @@ def db_pick_content(start_flg, end_flg, secstart_flg, secend_flg):
     with open(txt_path, 'r') as tp:
         tp_rb = tp.read()
         #将多余与无关的内容剔除
-        tp_chg = re.sub('-|^Password:|^\\n', '', tp_rb)
+        tp_chg = re.sub('-|^Password:|^\\n|Could.*', '', tp_rb)
         #匹配数据库检查项相关内容
         tp_pk = re.compile(start_flg + '(.*?)' + end_flg, re.S)
         tp_pkcontent = tp_pk.findall(tp_chg)
@@ -35,7 +35,7 @@ def host_pick_content(secstart_flg, secend_flg,
                       start_flg='check disk cpu memory io', end_flg='WangZhuangWang'):
     with open(txt_path, 'r') as tp:
         tp_rb = tp.read()
-        tp_chg = re.sub('-|\d+(rowsselected.)|^Password:|^\n', '', tp_rb)
+        tp_chg = re.sub('-|\d+(rowsselected.)|^Password:|^\n|Could.*', '', tp_rb)
         # 先截取所有主机的信息
         tp_pk = re.compile(start_flg + '(.*?)' + end_flg, re.S)
         tp_pkcontent = tp_pk.findall(tp_chg)
@@ -64,10 +64,19 @@ def host_pick_content(secstart_flg, secend_flg,
 def wzw_stat():
     with open(txt_path, 'r') as tp:
         tp_rb = tp.read()
-        # tp_chg = re.sub('-|\d+(rowsselected.)|^Password:|^\n', '', tp_rb)
         tp_pk = re.search('http.*', tp_rb)
         wzw_result = tp_pk.group()
         return wzw_result
+
+#匹配异常内容
+def pick_abnormal():
+    with open(txt_path, 'r') as tp:
+        tp_line = tp.read()
+        ab_content = re.findall('Could.*',tp_line)
+        content_pick = '\n'.join(ab_content)
+        if len(content_pick) != 0:
+            print("巡检有如下异常发生：")
+            print(content_pick)
 
 #空列表用以存储各个单元格对应的的内容
 content_filesys = []

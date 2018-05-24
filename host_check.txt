@@ -1,12 +1,12 @@
-[xiaxiaocheng@WLWJFX1 check_result]$ cat check_result_1804260900
+﻿[songlin@WLWJFX1 check_result]$ cat check_result_1805240900
 ----------------------PSMSDB1------------------
 
 -------------------check--index----------------
 
-WJS                     ;IDX_STAT_DAILY_FINAL_201705                                      ;P100                    ;UNUSABLE;TS_IOTJS_IDX
-WJS                     ;IDX_STAT_DAILY_FINAL_201705                                      ;P200                    ;UNUSABLE;TS_IOTJS_IDX
-WJS                     ;IDX_STAT_DAILY_FINAL_201705                                      ;P210                    ;UNUSABLE;TS_IOTJS_IDX
-WJS                     ;IDX_STAT_DAILY_FINAL_201705                                      ;P250                    ;UNUSABLE;TS_IOTJS_IDX
+WJS                     ;IDX_STAT_DAILY_FINAL_201705                                     ;P100                    ;UNUSABLE;TS_IOTJS_IDX
+WJS                     ;IDX_STAT_DAILY_FINAL_201705                                     ;P200                    ;UNUSABLE;TS_IOTJS_IDX
+WJS                     ;IDX_STAT_DAILY_FINAL_201705                                     ;P210                    ;UNUSABLE;TS_IOTJS_IDX
+WJS                     ;IDX_STAT_DAILY_FINAL_201705                                     ;P250                    ;UNUSABLE;TS_IOTJS_IDX
 
 ----------------check--conection-----------
 
@@ -15,13 +15,13 @@ norowsselected
 
 ----------------------check-table-space------------------------
 
-TS_IOTJF_DAT            ;       80.62
-TS_IOTJF_IDX            ;       70.26
-TS_IOTJK_DAT            ;       83.96
-TS_IOTJK_IDX            ;       46.5
-TS_IOTJS_DAT            ;       37.82
-TS_IOTJS_IDX            ;       3.44
-TS_IOTJS_STA            ;       66.35
+TS_IOTJF_DAT            ;       52.29
+TS_IOTJF_IDX            ;       79.88
+TS_IOTJK_DAT            ;       88.12
+TS_IOTJK_IDX            ;       56.9
+TS_IOTJS_DAT            ;       40.03
+TS_IOTJS_IDX            ;       3.49
+TS_IOTJS_STA            ;       70.75
 
 7rowsselected.
 
@@ -60,9 +60,9 @@ norowsselected
 
 ----------------------check-table-space------------------------
 
-TS_IOTJF_CDR_1          ;       79.27
-TS_IOTJF_CDR_2          ;       9.72
-TS_IOTJF_CDR_3          ;       17.44
+TS_IOTJF_CDR_1          ;       75.74
+TS_IOTJF_CDR_2          ;       11.03
+TS_IOTJF_CDR_3          ;       18.31
 
 ----------------------checktablepartition-------------------------
 
@@ -139,46 +139,16 @@ WLWJFX2 Sort is normal
 WLWJFX2 xdradjust is not normal
 WLWJFX2 filemerge is normal
 WLWJFX2 Tap3 is normal
-WLWJFX2 xfer_get is normal
-WLWJFX2 xfer_local is normal
+WLWJFX2 xfer_get is not normal
+WLWJFX2 xfer_local is not normal
 WLWJFX2 xfer_jf is normal
 WLWJFX2 errin is normal
 WLWJFX2 odac is normal
 WLWJFX2 uploader is normal
 -----------check WLWJFX3------------
-WLWJFX3 decode is not normal
-WLWJFX3 rpling is not normal
-WLWJFX3 chkdup is not normal
-WLWJFX3 rating is not normal
-WLWJFX3 Dispatch is normal
-WLWJFX3 Dataloader is normal
-WLWJFX3 Sort is normal
-WLWJFX3 xdradjust is not normal
-WLWJFX3 filemerge is normal
-WLWJFX3 Tap3 is normal
-WLWJFX3 xfer_get is not normal
-WLWJFX3 xfer_local is not normal
-WLWJFX3 xfer_jf is normal
-WLWJFX3 errin is not normal
-WLWJFX3 odac is not normal
-WLWJFX3 uploader is normal
+Could not chdir to home directory /WLWJFX3_data/wjfa3: No such file or directory
 -----------check WLWJFX4------------
-WLWJFX4 decode is not normal
-WLWJFX4 rpling is not normal
-WLWJFX4 chkdup is not normal
-WLWJFX4 rating is not normal
-WLWJFX4 Dispatch is normal
-WLWJFX4 Dataloader is normal
-WLWJFX4 Sort is normal
-WLWJFX4 xdradjust is not normal
-WLWJFX4 filemerge is normal
-WLWJFX4 Tap3 is normal
-WLWJFX4 xfer_get is not normal
-WLWJFX4 xfer_local is not normal
-WLWJFX4 xfer_jf is normal
-WLWJFX4 errin is not normal
-WLWJFX4 odac is normal
-WLWJFX4 uploader is normal
+Could not chdir to home directory /WLWJFX4_data/wjfa4: No such file or directory
 -----------check WLWJFX5------------
 WLWJFX5 decode is normal
 WLWJFX5 rpling is normal
@@ -191,7 +161,7 @@ WLWJFX5 xdradjust is normal
 WLWJFX5 filemerge is not normal
 WLWJFX5 Tap3 is normal
 WLWJFX5 xfer_get is normal
-WLWJFX5 xfer_local is normal
+WLWJFX5 xfer_local is not normal
 WLWJFX5 xfer_jf is not normal
 WLWJFX5 errin is normal
 WLWJFX5 odac is normal
@@ -208,11 +178,11 @@ WLWJFX6 xdradjust is normal
 WLWJFX6 filemerge is not normal
 WLWJFX6 Tap3 is normal
 WLWJFX6 xfer_get is normal
-WLWJFX6 xfer_local is normal
+WLWJFX6 xfer_local is not normal
 WLWJFX6 xfer_jf is not normal
 WLWJFX6 errin is normal
 WLWJFX6 odac is normal
-WLWJFX6 uploader is normal
+WLWJFX6 uploader is not normal
 -----------check WLWDXX1------------
 WLWDXX1 decode is normal
 WLWDXX1 rpling is normal
@@ -334,194 +304,189 @@ WLWJKX5 partition20 is normal
 ----------------------------------check disk cpu memory io ----------------------------
 -----------------WLWJFX1-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   70G  212G  25% /
+/dev/mapper/VolGroup-LogVol00                  296G   74G  208G  27% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda1                                      485M   41M  420M   9% /boot
-/dev/mapper/WLWJFX1_datavg-lv_WLWJFX1_data     504G  268G  211G  57% /WLWJFX1_data
-/dev/mapper/WLWJFX1_datavg-lv_WLWJFX1_databak  2.3T  1.7T  467G  79% /WLWJFX1_databak
-10.255.213.234:9421                             28T  741G   27T   3% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  741G   27T   3% /cbbs_iot_mfs3
-10.255.213.234:8421                             28T  741G   27T   3% /cbbs_iot_mfs2
-3.33 %
-9.75287%
-0.02%
+/dev/mapper/WLWJFX1_datavg-lv_WLWJFX1_data     504G  204G  276G  43% /WLWJFX1_data
+/dev/mapper/WLWJFX1_datavg-lv_WLWJFX1_databak  2.3T  1.7T  483G  78% /WLWJFX1_databak
+10.255.213.234:9421                             28T  667G   27T   3% /cbbs_iot_mfs1
+10.255.213.234:7421                             28T  667G   27T   3% /cbbs_iot_mfs3
+10.255.213.234:8421                             28T  667G   27T   3% /cbbs_iot_mfs2
+1.73 %
+12.408%
+0.01%
 -----------------WLWJFX2-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   54G  227G  20% /
+/dev/mapper/VolGroup-LogVol00                  296G   55G  226G  20% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda3                                      485M   41M  420M   9% /boot
-/dev/mapper/WLWJFX2_datavg-lv_WLWJFX2_data     504G  109G  371G  23% /WLWJFX2_data
-/dev/mapper/WLWJFX2_datavg-lv_WLWJFX2_databak  2.2T  818G  1.3T  39% /WLWJFX2_databak
-10.255.213.234:9421                             28T  739G   27T   3% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  739G   27T   3% /cbbs_iot_mfs3
-1.64 %
-8.64776%
-0.01%
+/dev/mapper/WLWJFX2_datavg-lv_WLWJFX2_data     504G  112G  368G  24% /WLWJFX2_data
+/dev/mapper/WLWJFX2_datavg-lv_WLWJFX2_databak  2.2T  1.8T  338G  85% /WLWJFX2_databak
+10.255.213.234:9421                             28T  658G   27T   3% /cbbs_iot_mfs1
+10.255.213.234:7421                             28T  658G   27T   3% /cbbs_iot_mfs3
+4.43 %
+9.42879%
+0.00%
+Could not chdir to home directory /WLWJFX3_data/wjfa3: No such file or directory
 -----------------WLWJFX3-----------------
-Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   53G  228G  19% /
-tmpfs                                          127G   26M  127G   1% /dev/shm
-/dev/sda1                                      485M   41M  420M   9% /boot
-/dev/mapper/WLWJFX3_datavg-lv_WLWJFX3_data     550G   78G  445G  15% /WLWJFX3_data
-/dev/mapper/WLWJFX3_datavg-lv_WLWJFX3_databak  2.2T  1.6T  510G  77% /WLWJFX3_databak
-10.255.213.234:9421                             28T  761G   27T   3% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  762G   27T   3% /cbbs_iot_mfs3
-1.23 %
-6.11955%
-0.02%
+Filesystem                            Size  Used Avail Use% Mounted on
+/dev/mapper/root_vg-lv_root            99G   57G   38G  61% /
+tmpfs                                 127G   72K  127G   1% /dev/shm
+/dev/sda1                             485M   41M  419M   9% /boot
+/dev/mapper/root_vg-lv_WLWJKX13_data  640G  198M  608G   1% /WLWJKX13_data
+0.01 %
+0.897466%
+0.00%
+Could not chdir to home directory /WLWJFX4_data/wjfa4: No such file or directory
 -----------------WLWJFX4-----------------
-Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   56G  226G  20% /
-tmpfs                                          127G   26M  127G   1% /dev/shm
-/dev/sda1                                      485M   41M  419M   9% /boot
-/dev/mapper/WLWJFX4_datavg-lv_WLWJFX4_data     504G   90G  389G  19% /WLWJFX4_data
-/dev/mapper/WLWJFX4_datavg-lv_WLWJFX4_databak  2.2T  1.6T  564G  74% /WLWJFX4_databak
-10.255.213.234:9421                             28T  766G   27T   3% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  766G   27T   3% /cbbs_iot_mfs3
-1.20 %
-5.13164%
+Filesystem                            Size  Used Avail Use% Mounted on
+/dev/mapper/root_vg-lv_root            99G   13G   82G  14% /
+/dev/sda1                             485M   41M  419M   9% /boot
+/dev/mapper/root_vg-lv_WLWJFX14_data  640G  198M  608G   1% /WLWJKX14_data
+0.01 %
+1.0561%
 0.00%
 -----------------WLWJFX5-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G  194G   87G  70% /
-tmpfs                                          127G   29M  127G   1% /dev/shm
+/dev/mapper/VolGroup-LogVol00                  296G  196G   86G  70% /
+tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda1                                      485M   41M  420M   9% /boot
-/dev/mapper/WLWJFX5_datavg-lv_WLWJFX5_data     504G  183G  297G  39% /WLWJFX5_data
-/dev/mapper/WLWJFX5_datavg-lv_WLWJFX5_databak  4.4T  3.0T  1.2T  73% /WLWJFX5_databak
-mfsmaster:9421                                 2.8T  397G  2.4T  15% /mnt/mfs
-10.255.213.234:9421                             28T  759G   27T   3% /cbbs_iot_mfs1
-10.255.213.234:8421                             28T  759G   27T   3% /cbbs_iot_mfs2
-10.255.213.234:7421                             28T  759G   27T   3% /cbbs_iot_mfs3
-5.32 %
-8.4604%
+/dev/mapper/WLWJFX5_datavg-lv_WLWJFX5_data     504G  202G  277G  43% /WLWJFX5_data
+/dev/mapper/WLWJFX5_datavg-lv_WLWJFX5_databak  4.4T  2.6T  1.6T  64% /WLWJFX5_databak
+mfsmaster:9421                                 2.3T  452G  1.9T  20% /mnt/mfs
+10.255.213.234:9421                             28T  672G   27T   3% /cbbs_iot_mfs3
+10.255.213.234:8421                             28T  672G   27T   3% /cbbs_iot_mfs2
+10.255.213.234:7421                             28T  672G   27T   3% /cbbs_iot_mfs1
+10.47 %
+5.23318%
 0.01%
 -----------------WLWJFX6-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   63G  219G  23% /
+/dev/mapper/VolGroup-LogVol00                  296G   64G  217G  23% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda3                                      485M   41M  419M   9% /boot
-/dev/mapper/WLWJFX6_datavg-lv_WLWJFX6_data     504G  146G  333G  31% /WLWJFX6_data
-/dev/mapper/WLWJFX6_datavg-lv_WLWJFX6_databak  4.5T  3.5T  783G  83% /WLWJFX6_databak
-mfsmaster:9421                                 2.8T  397G  2.4T  15% /mnt/mfs
-10.255.213.234:9421                             28T  751G   27T   3% /cbbs_iot_mfs1
-10.255.213.234:8421                             28T  751G   27T   3% /cbbs_iot_mfs2
-10.255.213.234:7421                             28T  750G   27T   3% /cbbs_iot_mfs3
-5.46 %
-7.60751%
-0.00%
+/dev/mapper/WLWJFX6_datavg-lv_WLWJFX6_data     504G  164G  315G  35% /WLWJFX6_data
+/dev/mapper/WLWJFX6_datavg-lv_WLWJFX6_databak  4.5T  3.3T  990G  78% /WLWJFX6_databak
+mfsmaster:9421                                 2.3T  451G  1.9T  20% /mnt/mfs
+10.255.213.234:9421                             28T  668G   27T   3% /cbbs_iot_mfs3
+10.255.213.234:8421                             28T  669G   27T   3% /cbbs_iot_mfs2
+10.255.213.234:7421                             28T  669G   27T   3% /cbbs_iot_mfs1
+12.65 %
+6.04113%
+0.01%
 -----------------WLWDXX1-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G  121G  160G  44% /
+/dev/mapper/VolGroup-LogVol00                  296G  123G  158G  44% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda3                                      485M   41M  420M   9% /boot
-/dev/mapper/WLWDXX1_datavg-lv_WLWDXX1_data    1009G  625G  333G  66% /WLWDXX1_data
-/dev/mapper/WLWDXX1_datavg-lv_WLWDXX1_databak  2.0T  915G  937G  50% /WLWDXX1_databak
-10.255.213.234:9421                             28T  746G   27T   3% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  746G   27T   3% /cbbs_iot_mfs3
-13.05 %
-6.6403%
-0.03%
+/dev/mapper/WLWDXX1_datavg-lv_WLWDXX1_data    1009G  659G  299G  69% /WLWDXX1_data
+/dev/mapper/WLWDXX1_datavg-lv_WLWDXX1_databak  2.0T  950G  902G  52% /WLWDXX1_databak
+10.255.213.234:9421                             28T  660G   27T   3% /cbbs_iot_mfs1
+10.255.213.234:7421                             28T  660G   27T   3% /cbbs_iot_mfs3
+21.56 %
+9.28028%
+0.02%
 -----------------WLWDXX2-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   98G  184G  35% /
+/dev/mapper/VolGroup-LogVol00                  296G   99G  182G  36% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda3                                      485M   41M  420M   9% /boot
-/dev/mapper/WLWDXX2_datavg-lv_WLWDXX2_data    1009G  206G  752G  22% /WLWDXX2_data
-/dev/mapper/WLWDXX2_datavg-lv_WLWDXX2_databak  2.0T  171G  1.7T  10% /WLWDXX2_databak
-10.255.213.234:9421                             28T  753G   27T   3% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  753G   27T   3% /cbbs_iot_mfs3
-1.85 %
-6.1045%
-0.00%
+/dev/mapper/WLWDXX2_datavg-lv_WLWDXX2_data    1009G  208G  750G  22% /WLWDXX2_data
+/dev/mapper/WLWDXX2_datavg-lv_WLWDXX2_databak  2.0T  187G  1.7T  11% /WLWDXX2_databak
+10.255.213.234:9421                             28T  646G   27T   3% /cbbs_iot_mfs1
+10.255.213.234:7421                             28T  646G   27T   3% /cbbs_iot_mfs3
+3.17 %
+7.90035%
+0.01%
 -----------------WLWBYX1-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   74G  208G  27% /
+/dev/mapper/VolGroup-LogVol00                  296G   74G  207G  27% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda1                                      485M   41M  419M   9% /boot
-/dev/mapper/WLWBYX1_datavg-lv_WLWBYX1_data    1008G  486G  472G  51% /WLWBYX1_data
-/dev/mapper/WLWBYX1_datavg-lv_WLWBYX1_databak  2.0T  892G 1023G  47% /WLWBYX1_databak
-10.255.213.234:9421                             28T  770G   27T   3% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  770G   27T   3% /cbbs_iot_mfs3
-0.05 %
-5.13693%
+/dev/mapper/WLWBYX1_datavg-lv_WLWBYX1_data    1008G  486G  471G  51% /WLWBYX1_data
+/dev/mapper/WLWBYX1_datavg-lv_WLWBYX1_databak  2.0T  895G 1020G  47% /WLWBYX1_databak
+10.255.213.234:9421                             28T  655G   27T   3% /cbbs_iot_mfs1
+10.255.213.234:7421                             28T  655G   27T   3% /cbbs_iot_mfs3
+4.59 %
+5.59275%
 0.01%
 Password: 
 -----------------WLWBYX2-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   74G  208G  27% /
+/dev/mapper/VolGroup-LogVol00                  296G   75G  206G  27% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda1                                      485M   41M  419M   9% /boot
-/dev/mapper/WLWBYX2_datavg-lv_WLWBYX2_data    1008G  501G  457G  53% /WLWBYX2_data
-/dev/mapper/WLWBYX2_datavg-lv_WLWBYX2_databak  2.0T  942G  972G  50% /WLWBYX2_databak
-10.255.213.234:9421                             28T  771G   27T   3% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  770G   27T   3% /cbbs_iot_mfs3
-5.50 %
-8.94291%
-0.01%
+/dev/mapper/WLWBYX2_datavg-lv_WLWBYX2_data    1008G  528G  429G  56% /WLWBYX2_data
+/dev/mapper/WLWBYX2_datavg-lv_WLWBYX2_databak  2.0T  954G  960G  50% /WLWBYX2_databak
+10.255.213.234:9421                             28T  662G   27T   3% /cbbs_iot_mfs1
+10.255.213.234:7421                             28T  662G   27T   3% /cbbs_iot_mfs3
+6.17 %
+7.71785%
+0.03%
 -----------------WLWCCX1-----------------
 Filesystem                                  Size  Used Avail Use% Mounted on
 /dev/mapper/VolGroup-LogVol00               296G  9.5G  271G   4% /
 tmpfs                                       127G   68K  127G   1% /dev/shm
 /dev/sda3                                   485M   41M  419M   9% /boot
-/dev/mapper/WLWCCX1_datavg-lv_WLWCCX1_data  1.6T  106G  1.4T   8% /WLWCCX1_data
-0.53 %
-55.3396%
-0.02%
+/dev/mapper/WLWCCX1_datavg-lv_WLWCCX1_data  1.6T  108G  1.4T   8% /WLWCCX1_data
+0.51 %
+53.9223%
+0.00%
 -----------------WLWCCX2-----------------
 Filesystem                                  Size  Used Avail Use% Mounted on
 /dev/mapper/VolGroup-LogVol00               296G  8.8G  272G   4% /
 tmpfs                                       127G     0  127G   0% /dev/shm
 /dev/sda3                                   485M   41M  420M   9% /boot
-/dev/mapper/WLWCCX2_datavg-lv_WLWCCX2_data  1.5T   97G  1.3T   7% /WLWCCX2_data
-0.04 %
-58.378%
-0.00%
+/dev/mapper/WLWCCX2_datavg-lv_WLWCCX2_data  1.5T   99G  1.3T   7% /WLWCCX2_data
+0.30 %
+58.7887%
+0.02%
 -----------------WLWCCX3-----------------
 Filesystem                                  Size  Used Avail Use% Mounted on
 /dev/mapper/VolGroup-LogVol00               296G   11G  271G   4% /
 tmpfs                                       127G   72K  127G   1% /dev/shm
 /dev/sda1                                   485M   41M  419M   9% /boot
-/dev/mapper/WLWCCX3_datavg-lv_WLWCCX3_data  1.6T   82G  1.4T   6% /WLWCCX3_data
-0.06 %
-65.3162%
+/dev/mapper/WLWCCX3_datavg-lv_WLWCCX3_data  1.6T   84G  1.4T   6% /WLWCCX3_data
+0.08 %
+67.5276%
 0.01%
 -----------------wlwjs7-----------------
 Filesystem                       Size  Used Avail Use% Mounted on
 /dev/mapper/vg_wlwjs7-lv_root     40G  7.8G   30G  21% /
 tmpfs                            127G   72K  127G   1% /dev/shm
 /dev/mapper/vg_wlwjs7-lv_app     414G  159G  235G  41% /app
-/dev/mapper/vg_wlwjs7-lv_bomc    2.0G  190M  1.7G  10% /bomc
+/dev/mapper/vg_wlwjs7-lv_bomc    2.0G  195M  1.7G  11% /bomc
 /dev/sda1                        2.0G  113M  1.8G   6% /boot
 /dev/mapper/vg_wlwjs7-lv_oracle   20G  172M   19G   1% /oracle
-/dev/mapper/vg_wlwjs7-lv_var     9.9G  701M  8.7G   8% /var
-/dev/sdb1                       1008G  125G  833G  14% /pboss_js7/backup01
-/dev/sdc1                       1008G  171G  787G  18% /pboss_js7/data01
-1.67 %
-14.9486%
-0.01%
+/dev/mapper/vg_wlwjs7-lv_var     9.9G  741M  8.7G   8% /var
+/dev/sdb1                       1008G  166G  792G  18% /pboss_js7/backup01
+/dev/sdc1                       1008G  176G  782G  19% /pboss_js7/data01
+2.04 %
+16.6142%
+0.00%
 -----------------wlwjs8-----------------
 Filesystem                       Size  Used Avail Use% Mounted on
 /dev/mapper/vg_wlwjs8-lv_root     40G  9.6G   28G  26% /
 tmpfs                            127G   72K  127G   1% /dev/shm
 /dev/mapper/vg_wlwjs8-lv_app     414G  214M  393G   1% /app
-/dev/mapper/vg_wlwjs8-lv_bomc    2.0G  192M  1.7G  11% /bomc
+/dev/mapper/vg_wlwjs8-lv_bomc    2.0G  197M  1.7G  11% /bomc
 /dev/sda1                        2.0G  113M  1.8G   6% /boot
 /dev/mapper/vg_wlwjs8-lv_oracle   20G  172M   19G   1% /oracle
-/dev/mapper/vg_wlwjs8-lv_var     9.9G  2.7G  6.8G  28% /var
-/dev/sdd1                       1008G  759G  199G  80% /pboss_js8/backup01
-/dev/sde1                       1008G  357G  600G  38% /pboss_js8/data01
-1.65 %
-3.9382%
+/dev/mapper/vg_wlwjs8-lv_var     9.9G  2.6G  6.9G  27% /var
+/dev/sdd1                       1008G  673G  285G  71% /pboss_js8/backup01
+/dev/sde1                       1008G  394G  564G  42% /pboss_js8/data01
+3.88 %
+72.2039%
 0.00%
 -----------------WLWJS1-----------------
 Filesystem                                      Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-lv_root                     99G  5.9G   88G   7% /
+/dev/mapper/VolGroup-lv_root                     99G  6.0G   88G   7% /
 tmpfs                                           127G   26M  127G   1% /dev/shm
 /dev/sdap1                                      485M   39M  421M   9% /boot
-/dev/mapper/WLWJS1_datavg-lv_WLWJS1_data        1.1T  680G  324G  68% /WLWJS1_data
-/dev/mapper/WLWJS1_databakvg-lv_WLWJS1_databak  1.1T   52G  952G   6% /WLWJS1_databak
-0.94 %
-4.76369%
+/dev/mapper/WLWJS1_datavg-lv_WLWJS1_data        1.1T  684G  320G  69% /WLWJS1_data
+/dev/mapper/WLWJS1_databakvg-lv_WLWJS1_databak  1.1T  236G  768G  24% /WLWJS1_databak
+1.18 %
+5.79237%
 0.00%
 -----------------WLWJS2-----------------
 Filesystem                                      Size  Used Avail Use% Mounted on
@@ -530,8 +495,8 @@ tmpfs                                           127G   26M  127G   1% /dev/shm
 /dev/sdap1                                      485M   39M  421M   9% /boot
 /dev/mapper/WLWJS2_datavg-lv_WLWJS2_data        1.1T  106G  898G  11% /WLWJS2_data
 /dev/mapper/WLWJS2_databakvg-lv_WLWJS2_databak  1.1T  174G  830G  18% /WLWJS2_databak
-0.92 %
-1.23652%
+1.21 %
+1.26198%
 0.00%
 -----------------WLWJS4-----------------
 Filesystem                                      Size  Used Avail Use% Mounted on
@@ -540,8 +505,8 @@ tmpfs                                           127G   23M  127G   1% /dev/shm
 /dev/sday1                                      485M   29M  431M   7% /boot
 /dev/mapper/WLWJS4_datavg-lv_WLWJS4_data        1.3T   45G  1.2T   4% /WLWJS4_data
 /dev/mapper/WLWJS4_databakvg-lv_WLWJS4_databak  1.3T  402G  803G  34% /WLWJS4_databak
-0.03 %
-1.56995%
+0.01 %
+1.55921%
 0.00%
 -----------------WLWJS5-----------------
 Filesystem                      Size  Used Avail Use% Mounted on
@@ -549,53 +514,53 @@ Filesystem                      Size  Used Avail Use% Mounted on
 tmpfs                           119G     0  119G   0% /dev/shm
 /dev/sda1                       485M   29M  431M   7% /boot
 0.01 %
-0.703767%
+0.718511%
 0.00%
 -----------------WLWJKX1-----------------
 Filesystem                               Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00            296G  126G  155G  45% /
+/dev/mapper/VolGroup-LogVol00            296G  162G  119G  58% /
 tmpfs                                    127G   68K  127G   1% /dev/shm
 /dev/sda1                                485M   41M  419M   9% /boot
-/dev/mapper/wlwjkx1_datavg-wlwjkx1_data  739G  522G  180G  75% /wlwjkx1_data
-7.54 %
-31.2521%
-0.02%
+/dev/mapper/wlwjkx1_datavg-wlwjkx1_data  739G  538G  164G  77% /wlwjkx1_data
+4.78 %
+27.1848%
+0.00%
 -----------------WLWJKX2-----------------
 Filesystem                               Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00            296G  107G  174G  39% /
+/dev/mapper/VolGroup-LogVol00            296G  194G   87G  70% /
 tmpfs                                    127G   72K  127G   1% /dev/shm
 /dev/sda1                                485M   41M  419M   9% /boot
-/dev/mapper/wlwjkx2_datavg-wlwjkx2_data  528G  283G  219G  57% /wlwjkx2_data
-10.82 %
-35.421%
+/dev/mapper/wlwjkx2_datavg-wlwjkx2_data  528G  291G  210G  59% /wlwjkx2_data
+1.59 %
+30.3681%
 0.00%
 -----------------WLWJKX3-----------------
 Filesystem                               Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00            296G  102G  179G  37% /
+/dev/mapper/VolGroup-LogVol00            296G  137G  144G  49% /
 tmpfs                                    127G   68K  127G   1% /dev/shm
 /dev/sda1                                485M   41M  419M   9% /boot
 /dev/mapper/wlwjkx3_datavg-wlwjkx3_data  528G  174G  328G  35% /wlwjkx3_data
-13.18 %
-35.3619%
-0.00%
+5.79 %
+29.5934%
+0.06%
 -----------------WLWJKX4-----------------
 Filesystem                               Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00            296G   98G  183G  35% /
+/dev/mapper/VolGroup-LogVol00            296G  146G  136G  52% /
 tmpfs                                    127G   72K  127G   1% /dev/shm
 /dev/sda1                                485M   41M  419M   9% /boot
-/dev/mapper/wlwjkx4_datavg-wlwjkx4_data  528G  287G  215G  58% /wlwjkx4_data
-7.87 %
-30.9742%
-0.02%
+/dev/mapper/wlwjkx4_datavg-wlwjkx4_data  528G  290G  211G  58% /wlwjkx4_data
+2.08 %
+27.7654%
+0.00%
 -----------------WLWJKX5-----------------
 Filesystem                               Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00            296G  128G  153G  46% /
+/dev/mapper/VolGroup-LogVol00            296G  163G  118G  58% /
 tmpfs                                    127G   72K  127G   1% /dev/shm
 /dev/sda3                                485M   41M  419M   9% /boot
 /dev/mapper/wlwjkx5_datavg-wlwjkx5_data  528G  323G  178G  65% /wlwjkx5_data
-7.41 %
-30.5799%
-0.01%
+1.93 %
+27.0028%
+0.00%
 ----------------------------------check connection ----------------------------
 -----------------WangZhuangWang-----------------
 http://10.255.242.71:1103/Trans/Receiver  OK
