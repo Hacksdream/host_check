@@ -6,14 +6,14 @@
 > 1. ordinary text
 > 2. excle
 
-## Usage
-> 1. Install python3.x
-> 2. Module: openpyxl
+## Tools：
+> 1. python3.x
+> 2. openpyxl
 
-## Note
+## Usage：
 > 1. Host_check text must be stored in the directory where the scripts is located
 > 2. It's recommended to use pip to install module
 > 3. Install openpyxl module:
 > **pip install openpyxl**
-> 4. Just excute the script "xls_write"：
+> 4. Just excute the script "xls_write.py"：
 > **python xls_write.py**

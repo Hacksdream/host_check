@@ -14,34 +14,11 @@ xls_path = os.path.join(os.getcwd(), '日报模板.xlsx')
 xls_wb = load_workbook(xls_path)
 xls_ws = xls_wb.worksheets[0]
 
-# 将主机文件系统空间相关结果填入相应的单元格中
-row_file = 2
-for val_file in st.content_filesys:
-    val_file = val_file.replace('\n', '', 1)
-    cell_file = xls_ws.cell(row=row_file, column=4)
-    cell_file.value = val_file
-    row_file += 4
-
-
-# 系统性能相关巡检结果
-row_perf = 3
-count_perf = 0
-for val_perf in st.content_perf:
-    cell_perf = xls_ws.cell(row=row_perf, column=4)
-    cell_perf.value = val_perf
-    count_perf += 1
-    row_perf += 1
-    if count_perf >= 3:
-        count_perf = 0
-        row_perf += 1
-        continue
-
-# 数据库相关结果填入
-row_db = 98
-for val_db in st.content_db:
-    cell_db = xls_ws.cell(row=row_db, column=4)
-    cell_db.value = val_db
-    row_db += 1
+row_pick = 2
+for cell_val in st.sorted_content:
+    cell = xls_ws.cell(row=row_pick,column=4)
+    cell.value = cell_val
+    row_pick += 1
 
 # 填入结果后，有些单元格格式（线框，字体，填充颜色）有变化，需进行适当调整
 cell_bd = NamedStyle(name="cell_bd")
@@ -108,7 +85,3 @@ file_name = ("物联网内容计费主机巡检日报" + "_" + time.strftime("%Y
              + am_pm + ".xlsx")
 
 xls_wb.save(file_name)
-
-#检查是否有异常信息出现
-st.pick_abnormal()
-
