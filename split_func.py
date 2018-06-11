@@ -72,14 +72,14 @@ def split():
         tp_result = ''.join(tp_result)
         # 再进一步截取单个主机中的文件系统空间的巡检信息
         # 设置compile的结束标志位
-        file_endflg = re.search('\d.\d+\s*%', tp_result).group()
+        file_endflg = re.search('\d+\.\d+\s*%', tp_result).group()
         file_sys_pk = re.compile('(.*?)' + file_endflg, re.S)
         file_sys_space = file_sys_pk.findall(tp_result)
         file_sys_space = ''.join(file_sys_space)
         # 去除转换成列表后添加的换行符
         file_sys_space = file_sys_space.replace('\n', '', 1)
         # 截取cpu，内存，io的巡检信息
-        host_load = re.search('(?P<cpu_load>\d+.\d+\s*%)\n(?P<mem_load>\d+.\d+%)\n(?P<IO_load>\d+.\d+%)', tp_result)
+        host_load = re.search('(?P<cpu_load>\d+\.\d+\s*%)\n(?P<mem_load>\d+\.\d+%)\n(?P<IO_load>\d+\.\d+%)', tp_result)
         # 为excle单元格格式百分比作准备
         cpu_load = float(host_load.group('cpu_load').strip('%')) * 0.01
         mem_load = float(host_load.group('mem_load').strip('%')) * 0.01
