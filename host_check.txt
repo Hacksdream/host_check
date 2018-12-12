@@ -1,4 +1,4 @@
-﻿[songlin@WLWJFX1 check_result]$ cat check_result_1806050900
+﻿WLWJFX5-wjfa5[/WLWJFX5_data/wjfa5/cmsz/scripts/monitor/host_monitor/check_result]$cat  check_result_1812110900
 ----------------------PSMSDB1------------------
 
 -------------------check--index----------------
@@ -15,15 +15,22 @@ norowsselected
 
 ----------------------check-table-space------------------------
 
-TS_IOTJF_DAT            ;       54.47
-TS_IOTJF_IDX            ;       75.65
-TS_IOTJK_DAT            ;       88.07
-TS_IOTJK_IDX            ;       60.35
-TS_IOTJS_DAT            ;       46.05
-TS_IOTJS_IDX            ;       3.52
-TS_IOTJS_STA            ;       74.28
+TS_IOTIF                ;       .13
+TS_IOTJF                ;       .1
+TS_IOTJF_DAT            ;       83.13
+TS_IOTJF_IDX            ;       67.29
+TS_IOTJK_DAT            ;       78.46
+TS_IOTJK_IDX            ;       83.33
+TS_IOTJK_ORDERHIS       ;       80.04
+TS_IOTJS                ;       .88
+TS_IOTJS_DAT            ;       70.72
+TS_IOTJS_IDX            ;       5.09
+TS_IOTJS_STA            ;       82.98
+TS_IOTTMP_DAT           ;       63.53
+TS_IOTZC_DAT            ;       77.27
+TS_IOTZC_IDX            ;       .06
 
-7rowsselected.
+14rowsselected.
 
 ----------------------checktablepartition-------------------------
 
@@ -60,9 +67,9 @@ norowsselected
 
 ----------------------check-table-space------------------------
 
-TS_IOTJF_CDR_1          ;       76.67
-TS_IOTJF_CDR_2          ;       12.3
-TS_IOTJF_CDR_3          ;       18.6
+TS_IOTJF_CDR_1          ;       90.88
+TS_IOTJF_CDR_2          ;       23.64
+TS_IOTJF_CDR_3          ;       25.16
 
 ----------------------checktablepartition-------------------------
 
@@ -112,46 +119,36 @@ PSMS_RST                ;CBBS_RST_BALANCE_BSMS  ;               1;partitionbymon
 ----------------------------------check process ----------------------------
 
 -----------check WLWJFX1------------
-WLWJFX1 decode is not normal
-WLWJFX1 rpling is not normal
-WLWJFX1 chkdup is not normal
-WLWJFX1 rating is not normal
-WLWJFX1 Dispatch is normal
-WLWJFX1 Dataloader is normal
-WLWJFX1 Sort is normal
-WLWJFX1 xdradjust is not normal
-WLWJFX1 filemerge is normal
-WLWJFX1 Tap3 is normal
-WLWJFX1 xfer_get is not normal
-WLWJFX1 xfer_local is normal
-WLWJFX1 xfer_jf is normal
-WLWJFX1 errin is normal
-WLWJFX1 odac is normal
-WLWJFX1 uploader is normal
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:8Q0Bywyq62Uh/LDTQXsN2YmkN1eP9st021JxLMwLmxE.
+Please contact your system administrator.
+Add correct host key in /WLWJFX5_data/wjfa5/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /WLWJFX5_data/wjfa5/.ssh/known_hosts:15
+ECDSA host key for 10.255.224.5 has changed and you have requested strict checking.
+Host key verification failed.
+
 -----------check WLWJFX2------------
-WLWJFX2 decode is not normal
-WLWJFX2 rpling is not normal
-WLWJFX2 chkdup is not normal
-WLWJFX2 rating is not normal
-WLWJFX2 Dispatch is normal
-WLWJFX2 Dataloader is normal
-WLWJFX2 Sort is normal
-WLWJFX2 xdradjust is not normal
-WLWJFX2 filemerge is normal
-WLWJFX2 Tap3 is normal
-WLWJFX2 xfer_get is not normal
-WLWJFX2 xfer_local is not normal
-WLWJFX2 xfer_jf is normal
-WLWJFX2 errin is normal
-WLWJFX2 odac is normal
-WLWJFX2 uploader is normal
------------check WLWJFX3------------
-Could not chdir to home directory /WLWJFX3_data/wjfa3: No such file or directory
------------check WLWJFX4------------
-Could not chdir to home directory /WLWJFX4_data/wjfa4: No such file or directory
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:Mz+v2HR8d7plLFTr+Ni6ItRu9vtH7j5g53Sr98cEa6Q.
+Please contact your system administrator.
+Add correct host key in /WLWJFX5_data/wjfa5/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /WLWJFX5_data/wjfa5/.ssh/known_hosts:31
+ECDSA host key for 10.255.224.7 has changed and you have requested strict checking.
+Host key verification failed.
+
 -----------check WLWJFX5------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 cat: /WLWJFX1_data/wjfa1/scripts/checksys/machine.list: 没有那个文件或目录
 -----------check WLWJFX6------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 WLWJFX6 decode is normal
 WLWJFX6 rpling is normal
 WLWJFX6 chkdup is normal
@@ -166,9 +163,11 @@ WLWJFX6 xfer_get is normal
 WLWJFX6 xfer_local is not normal
 WLWJFX6 xfer_jf is not normal
 WLWJFX6 errin is normal
-WLWJFX6 odac is normal
+WLWJFX6 odac is not normal
 WLWJFX6 uploader is not normal
 -----------check WLWDXX1------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 WLWDXX1 decode is normal
 WLWDXX1 rpling is normal
 WLWDXX1 chkdup is normal
@@ -183,14 +182,16 @@ WLWDXX1 xfer_get is normal
 WLWDXX1 xfer_local is normal
 WLWDXX1 xfer_jf is normal
 WLWDXX1 errin is normal
-WLWDXX1 odac is normal
+WLWDXX1 odac is not normal
 WLWDXX1 uploader is normal
 WLWDXX1 verifile is normal
 WLWDXX1 xfer_bal is normal
 -----------check WLWDXX2------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 WLWDXX2 decode is normal
 WLWDXX2 rpling is normal
-WLWDXX2 chkdup is normal
+WLWDXX2 chkdup is not normal
 WLWDXX2 rating is not normal
 WLWDXX2 Dispatch is normal
 WLWDXX2 Dataloader is normal
@@ -202,15 +203,17 @@ WLWDXX2 xfer_get is normal
 WLWDXX2 xfer_local is normal
 WLWDXX2 xfer_jf is normal
 WLWDXX2 errin is normal
-WLWDXX2 odac is normal
+WLWDXX2 odac is not normal
 WLWDXX2 uploader is normal
 WLWDXX2 verifile is normal
 WLWDXX2 xfer_bal is normal
 -----------check WLWBYX1------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 WLWBYX1 decode is normal
 WLWBYX1 rpling is not normal
 WLWBYX1 chkdup is not normal
-WLWBYX1 rating is normal
+WLWBYX1 rating is not normal
 WLWBYX1 Dispatch is normal
 WLWBYX1 Dataloader is normal
 WLWBYX1 Sort is normal
@@ -227,7 +230,9 @@ WLWBYX1 verifile is normal
 WLWBYX1 xfer_bal is not normal
 WLWBYX1 orderbill_real is not normal
 -----------check WLWBYX2------------
+Authorized only. All activity will be monitored and reported
 Password: 
+---------------------------------------------------------------
 WLWBYX2 decode is normal
 WLWBYX2 rpling is not normal
 WLWBYX2 chkdup is not normal
@@ -248,6 +253,8 @@ WLWBYX2 verifile is normal
 WLWBYX2 xfer_bal is not normal
 WLWBYX2 orderbill_real is not normal
 -----------check WLWJKX1------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 WLWJKX1 webclient100 is normal
 WLWJKX1 webclient290 is normal
 WLWJKX1 partition1 is normal
@@ -255,6 +262,8 @@ WLWJKX1 partition2 is normal
 WLWJKX1 partition3 is normal
 WLWJKX1 partition4 is normal
 -----------check WLWJKX2------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 WLWJKX2 webclient531 is normal
 WLWJKX2 webclient371 is normal
 WLWJKX2 partition5 is normal
@@ -262,6 +271,8 @@ WLWJKX2 partition6 is normal
 WLWJKX2 partition7 is normal
 WLWJKX2 partition8 is normal
 -----------check WLWJKX3------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 WLWJKX3 webclient571 is normal
 WLWJKX3 webclient200 is normal
 WLWJKX3 webclient311 is normal
@@ -271,6 +282,8 @@ WLWJKX3 partition10 is normal
 WLWJKX3 partition11 is normal
 WLWJKX3 partition12 is normal
 -----------check WLWJKX4------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 WLWJKX4 webclient591 is normal
 WLWJKX4 webclient210 is normal
 WLWJKX4 webclient230 is normal
@@ -279,6 +292,8 @@ WLWJKX4 partition14 is normal
 WLWJKX4 partition15 is normal
 WLWJKX4 partition16 is normal
 -----------check WLWJKX5------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 WLWJKX5 webclient15G is normal
 WLWJKX5 webclient431 is normal
 WLWJKX5 webclient999 is normal
@@ -287,266 +302,279 @@ WLWJKX5 partition18 is normal
 WLWJKX5 partition19 is normal
 WLWJKX5 partition20 is normal
 ----------------------------------check disk cpu memory io ----------------------------
------------------WLWJFX1-----------------
-Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   80G  201G  29% /
-tmpfs                                          127G   26M  127G   1% /dev/shm
-/dev/sda1                                      485M   41M  420M   9% /boot
-/dev/mapper/WLWJFX1_datavg-lv_WLWJFX1_data     504G  200G  279G  42% /WLWJFX1_data
-/dev/mapper/WLWJFX1_datavg-lv_WLWJFX1_databak  2.3T  525G  1.7T  25% /WLWJFX1_databak
-10.255.213.234:9421                             28T  505G   27T   2% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  504G   27T   2% /cbbs_iot_mfs3
-10.255.213.234:8421                             28T  505G   27T   2% /cbbs_iot_mfs2
-1.56 %
-10.9107%
-0.00%
------------------WLWJFX2-----------------
-Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   55G  226G  20% /
-tmpfs                                          127G   26M  127G   1% /dev/shm
-/dev/sda3                                      485M   41M  420M   9% /boot
-/dev/mapper/WLWJFX2_datavg-lv_WLWJFX2_data     504G  110G  370G  23% /WLWJFX2_data
-/dev/mapper/WLWJFX2_datavg-lv_WLWJFX2_databak  2.2T   20G  2.1T   1% /WLWJFX2_databak
-10.255.213.234:9421                             28T  505G   27T   2% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  505G   27T   2% /cbbs_iot_mfs3
-2.19 %
-7.24185%
-0.01%
-Could not chdir to home directory /WLWJFX3_data/wjfa3: No such file or directory
------------------WLWJFX3-----------------
-Filesystem                            Size  Used Avail Use% Mounted on
-/dev/mapper/root_vg-lv_root            99G   56G   38G  60% /
-tmpfs                                 127G   72K  127G   1% /dev/shm
-/dev/sda1                             485M   41M  419M   9% /boot
-/dev/mapper/root_vg-lv_WLWJKX13_data  640G  104G  504G  18% /WLWJKX13_data
-0.03 %
-15.9709%
-0.00%
-Could not chdir to home directory /WLWJFX4_data/wjfa4: No such file or directory
------------------WLWJFX4-----------------
-Filesystem                            Size  Used Avail Use% Mounted on
-/dev/mapper/root_vg-lv_root            99G   12G   82G  13% /
-/dev/sda1                             485M   41M  419M   9% /boot
-/dev/mapper/root_vg-lv_WLWJFX14_data  640G  104G  504G  18% /WLWJKX14_data
-0.04 %
-9.23686%
-0.00%
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:8Q0Bywyq62Uh/LDTQXsN2YmkN1eP9st021JxLMwLmxE.
+Please contact your system administrator.
+Add correct host key in /WLWJFX5_data/wjfa5/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /WLWJFX5_data/wjfa5/.ssh/known_hosts:15
+ECDSA host key for 10.255.224.5 has changed and you have requested strict checking.
+Host key verification failed.
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:Mz+v2HR8d7plLFTr+Ni6ItRu9vtH7j5g53Sr98cEa6Q.
+Please contact your system administrator.
+Add correct host key in /WLWJFX5_data/wjfa5/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /WLWJFX5_data/wjfa5/.ssh/known_hosts:31
+ECDSA host key for 10.255.224.7 has changed and you have requested strict checking.
+Host key verification failed.
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWJFX5-----------------
 Filesystem                                       Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                    296G  196G   85G  70% /
+/dev/mapper/VolGroup-LogVol00                    296G  202G   79G  72% /
 tmpfs                                            127G   26M  127G   1% /dev/shm
 /dev/sda1                                        485M   41M  420M   9% /boot
-mfsmaster:9421                                   2.3T  509G  1.8T  22% /mnt/mfs
-10.255.213.234:9421                               28T  506G   27T   2% /cbbs_iot_mfs3
-10.255.213.234:8421                               28T  506G   27T   2% /cbbs_iot_mfs2
-10.255.213.234:7421                               28T  506G   27T   2% /cbbs_iot_mfs1
-/dev/mapper/WLWJFX5_datavg-lv_WLWJFX5_data       504G  165G  315G  35% /WLWJFX5_data
-/dev/mapper/xp24k_databak1_vg-lv_xp24k_databak1  5.5T  4.4T  892G  84% /WLWJFX5_databak
-10.74 %
-6.50742%
-0.04%
+mfsmaster:9421                                   2.8T  146G  2.6T   6% /mnt/mfs
+10.255.213.234:8421                               28T  515G   27T   2% /cbbs_iot_mfs2
+10.255.213.234:7421                               28T  514G   27T   2% /cbbs_iot_mfs3
+10.255.213.234:9421                               28T  524G   27T   2% /cbbs_iot_mfs1
+/dev/mapper/xp24k_databak3_vg-lv_xp24k_databak3  3.6T  2.8T  639G  82% /WLWJFX5_databak02
+/dev/mapper/WLWJFX5_datavg-lv_WLWJFX5_data       504G  284G  196G  60% /WLWJFX5_data
+/dev/mapper/xp24k_databak1_vg-lv_xp24k_databak1  5.5T  3.5T  1.7T  68% /WLWJFX5_databak
+15.01 %
+9.24309%
+0.93%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWJFX6-----------------
 Filesystem                                       Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                    296G   65G  216G  23% /
-tmpfs                                            127G   26M  127G   1% /dev/shm
+/dev/mapper/VolGroup-LogVol00                    296G  242G   39G  87% /
+tmpfs                                            127G   29M  127G   1% /dev/shm
 /dev/sda3                                        485M   41M  419M   9% /boot
-mfsmaster:9421                                   2.3T  508G  1.8T  22% /mnt/mfs
-10.255.213.234:9421                               28T  500G   27T   2% /cbbs_iot_mfs3
-10.255.213.234:8421                               28T  500G   27T   2% /cbbs_iot_mfs2
-10.255.213.234:7421                               28T  500G   27T   2% /cbbs_iot_mfs1
-/dev/mapper/WLWJFX6_datavg-lv_WLWJFX6_data       504G  175G  305G  37% /WLWJFX6_data
-/dev/mapper/xp24k_databak2_vg-lv_xp24k_databak2  6.3T  4.8T  1.3T  80% /WLWJFX6_databak
-/dev/mapper/xp12k_databak1_vg-lv_xp12k_databak1  3.2T  199M  3.0T   1% /WLWJFX6_databak02
-8.70 %
-5.76422%
-0.02%
+mfsmaster:9421                                   2.8T  145G  2.6T   6% /mnt/mfs
+/dev/mapper/WLWJFX6_datavg-lv_WLWJFX6_data       504G  149G  330G  32% /WLWJFX6_data
+/dev/mapper/xp12k_databak1_vg-lv_xp12k_databak1  5.3T  2.4T  2.7T  48% /WLWJFX6_databak02
+10.255.213.234:8421                               28T  524G   27T   2% /cbbs_iot_mfs2
+10.255.213.234:7421                               28T  523G   27T   2% /cbbs_iot_mfs3
+10.255.213.234:9421                               28T  534G   27T   2% /cbbs_iot_mfs1
+/dev/mapper/xp24k_databak2_vg-lv_xp24k_databak2  6.3T  4.0T  2.1T  67% /WLWJFX6_databak
+18.48 %
+10.5766%
+3.37%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWDXX1-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G  124G  157G  45% /
+/dev/mapper/VolGroup-LogVol00                  296G  138G  143G  50% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda3                                      485M   41M  420M   9% /boot
-/dev/mapper/WLWDXX1_datavg-lv_WLWDXX1_data    1009G  464G  494G  49% /WLWDXX1_data
-/dev/mapper/WLWDXX1_datavg-lv_WLWDXX1_databak  2.0T  847G 1005G  46% /WLWDXX1_databak
-10.255.213.234:9421                             28T  492G   27T   2% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  492G   27T   2% /cbbs_iot_mfs3
-6.83 %
-7.90486%
-0.01%
+/dev/mapper/WLWDXX1_datavg-lv_WLWDXX1_data    1009G  551G  407G  58% /WLWDXX1_data
+10.255.213.234:9421                             28T  531G   27T   2% /cbbs_iot_mfs1
+10.255.213.234:7421                             28T  521G   27T   2% /cbbs_iot_mfs3
+/dev/mapper/WLWDXX1_datavg-lv_WLWDXX1_databak  2.0T  1.2T  668G  64% /WLWDXX1_databak
+16.91 %
+9.54751%
+0.36%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWDXX2-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G  100G  182G  36% /
+/dev/mapper/VolGroup-LogVol00                  296G  112G  169G  40% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda3                                      485M   41M  420M   9% /boot
-/dev/mapper/WLWDXX2_datavg-lv_WLWDXX2_data    1009G  388G  571G  41% /WLWDXX2_data
-/dev/mapper/WLWDXX2_datavg-lv_WLWDXX2_databak  2.0T  138G  1.7T   8% /WLWDXX2_databak
-10.255.213.234:9421                             28T  497G   27T   2% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  497G   27T   2% /cbbs_iot_mfs3
-10.66 %
-7.20011%
-0.10%
+10.255.213.234:9421                             28T  536G   27T   2% /cbbs_iot_mfs1
+10.255.213.234:7421                             28T  525G   27T   2% /cbbs_iot_mfs3
+/dev/mapper/WLWDXX2_datavg-lv_WLWDXX2_data    1009G  651G  307G  69% /WLWDXX2_data
+/dev/mapper/WLWDXX2_datavg-lv_WLWDXX2_databak  2.0T  231G  1.6T  13% /WLWDXX2_databak
+22.37 %
+7.69727%
+0.02%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWBYX1-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   75G  206G  27% /
+/dev/mapper/VolGroup-LogVol00                  296G   84G  198G  30% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda1                                      485M   41M  419M   9% /boot
-/dev/mapper/WLWBYX1_datavg-lv_WLWBYX1_data    1008G  488G  470G  51% /WLWBYX1_data
-/dev/mapper/WLWBYX1_datavg-lv_WLWBYX1_databak  2.0T  895G 1020G  47% /WLWBYX1_databak
-10.255.213.234:9421                             28T  498G   27T   2% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  498G   27T   2% /cbbs_iot_mfs3
-0.01 %
-4.35614%
+10.255.213.234:9421                             28T  535G   27T   2% /cbbs_iot_mfs1
+10.255.213.234:7421                             28T  525G   27T   2% /cbbs_iot_mfs3
+/dev/mapper/WLWBYX1_datavg-lv_WLWBYX1_data    1008G  523G  435G  55% /WLWBYX1_data
+/dev/mapper/WLWBYX1_datavg-lv_WLWBYX1_databak  2.0T  1.4T  490G  75% /WLWBYX1_databak
+0.12 %
+3.95473%
 0.00%
+Authorized only. All activity will be monitored and reported
 Password: 
+---------------------------------------------------------------
 -----------------WLWBYX2-----------------
 Filesystem                                     Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00                  296G   76G  205G  27% /
+/dev/mapper/VolGroup-LogVol00                  296G   84G  197G  30% /
 tmpfs                                          127G   26M  127G   1% /dev/shm
 /dev/sda1                                      485M   41M  419M   9% /boot
-/dev/mapper/WLWBYX2_datavg-lv_WLWBYX2_data    1008G  521G  437G  55% /WLWBYX2_data
-/dev/mapper/WLWBYX2_datavg-lv_WLWBYX2_databak  2.0T  954G  960G  50% /WLWBYX2_databak
-10.255.213.234:9421                             28T  495G   27T   2% /cbbs_iot_mfs1
-10.255.213.234:7421                             28T  495G   27T   2% /cbbs_iot_mfs3
+10.255.213.234:9421                             28T  532G   27T   2% /cbbs_iot_mfs1
+10.255.213.234:7421                             28T  522G   27T   2% /cbbs_iot_mfs3
+/dev/mapper/WLWBYX2_datavg-lv_WLWBYX2_data    1008G  326G  632G  34% /WLWBYX2_data
+/dev/mapper/WLWBYX2_datavg-lv_WLWBYX2_databak  2.0T  1.2T  701G  64% /WLWBYX2_databak
 0.02 %
-2.70421%
-0.02%
+4.98232%
+0.01%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWCCX1-----------------
 Filesystem                                  Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00               296G  9.5G  271G   4% /
+/dev/mapper/VolGroup-LogVol00               296G  9.6G  271G   4% /
 tmpfs                                       127G   68K  127G   1% /dev/shm
 /dev/sda3                                   485M   41M  419M   9% /boot
-/dev/mapper/WLWCCX1_datavg-lv_WLWCCX1_data  1.6T  126G  1.4T   9% /WLWCCX1_data
-0.45 %
-60.6914%
-0.00%
+/dev/mapper/WLWCCX1_datavg-lv_WLWCCX1_data  1.6T  130G  1.4T   9% /WLWCCX1_data
+0.37 %
+38.3031%
+0.01%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWCCX2-----------------
 Filesystem                                  Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00               296G  8.8G  272G   4% /
+/dev/mapper/VolGroup-LogVol00               296G  9.1G  272G   4% /
 tmpfs                                       127G     0  127G   0% /dev/shm
 /dev/sda3                                   485M   41M  420M   9% /boot
-/dev/mapper/WLWCCX2_datavg-lv_WLWCCX2_data  1.5T  109G  1.3T   8% /WLWCCX2_data
-0.05 %
-61.3863%
-0.01%
+/dev/mapper/WLWCCX2_datavg-lv_WLWCCX2_data  1.5T  115G  1.3T   9% /WLWCCX2_data
+0.30 %
+52.5417%
+0.11%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWCCX3-----------------
 Filesystem                                  Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00               296G   11G  271G   4% /
+/dev/mapper/VolGroup-LogVol00               296G   11G  270G   4% /
 tmpfs                                       127G   72K  127G   1% /dev/shm
 /dev/sda1                                   485M   41M  419M   9% /boot
-/dev/mapper/WLWCCX3_datavg-lv_WLWCCX3_data  1.6T   95G  1.4T   7% /WLWCCX3_data
-0.06 %
-66.935%
-0.00%
+/dev/mapper/WLWCCX3_datavg-lv_WLWCCX3_data  1.6T  113G  1.4T   8% /WLWCCX3_data
+0.04 %
+53.0819%
+0.13%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------wlwjs7-----------------
 Filesystem                       Size  Used Avail Use% Mounted on
-/dev/mapper/vg_wlwjs7-lv_root     40G  7.8G   30G  21% /
+/dev/mapper/vg_wlwjs7-lv_root     40G  7.9G   30G  22% /
 tmpfs                            127G   72K  127G   1% /dev/shm
 /dev/mapper/vg_wlwjs7-lv_app     414G  159G  235G  41% /app
-/dev/mapper/vg_wlwjs7-lv_bomc    2.0G  198M  1.7G  11% /bomc
+/dev/mapper/vg_wlwjs7-lv_bomc    2.0G  202M  1.7G  11% /bomc
 /dev/sda1                        2.0G  113M  1.8G   6% /boot
 /dev/mapper/vg_wlwjs7-lv_oracle   20G  172M   19G   1% /oracle
-/dev/mapper/vg_wlwjs7-lv_var     9.9G  767M  8.6G   9% /var
-/dev/sdb1                       1008G  183G  774G  20% /pboss_js7/backup01
-/dev/sdc1                       1008G  173G  785G  19% /pboss_js7/data01
-3.56 %
-16.3303%
-0.00%
+/dev/mapper/vg_wlwjs7-lv_var     9.9G  2.2G  7.2G  24% /var
+/dev/sdb1                       1008G  295G  662G  31% /pboss_js7/backup01
+/dev/sdc1                       1008G  289G  669G  31% /pboss_js7/data01
+6.29 %
+23.3155%
+0.11%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------wlwjs8-----------------
 Filesystem                       Size  Used Avail Use% Mounted on
-/dev/mapper/vg_wlwjs8-lv_root     40G  9.6G   28G  26% /
-tmpfs                            127G   72K  127G   1% /dev/shm
+/dev/mapper/vg_wlwjs8-lv_root     40G   11G   28G  27% /
+tmpfs                            127G   68K  127G   1% /dev/shm
 /dev/mapper/vg_wlwjs8-lv_app     414G  214M  393G   1% /app
-/dev/mapper/vg_wlwjs8-lv_bomc    2.0G  189M  1.7G  10% /bomc
+/dev/mapper/vg_wlwjs8-lv_bomc    2.0G  200M  1.7G  11% /bomc
 /dev/sda1                        2.0G  113M  1.8G   6% /boot
 /dev/mapper/vg_wlwjs8-lv_oracle   20G  172M   19G   1% /oracle
-/dev/mapper/vg_wlwjs8-lv_var     9.9G  2.5G  7.0G  26% /var
-/dev/sdd1                       1008G  707G  251G  74% /pboss_js8/backup01
-/dev/sde1                       1008G  512G  446G  54% /pboss_js8/data01
-5.73 %
-19.2822%
-0.00%
+/dev/mapper/vg_wlwjs8-lv_var     9.9G  2.6G  6.8G  28% /var
+/dev/sdd1                       1008G  436G  522G  46% /pboss_js8/backup01
+/dev/sde1                       1008G  445G  513G  47% /pboss_js8/data01
+3.80 %
+59.6352%
+0.04%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWJS1-----------------
-Filesystem                                      Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-lv_root                     99G  5.9G   88G   7% /
-tmpfs                                           127G   26M  127G   1% /dev/shm
-/dev/sdap1                                      485M   39M  421M   9% /boot
-/dev/mapper/WLWJS1_datavg-lv_WLWJS1_data        1.1T  696G  308G  70% /WLWJS1_data
-/dev/mapper/WLWJS1_databakvg-lv_WLWJS1_databak  1.1T  173G  831G  18% /WLWJS1_databak
-1.21 %
-3.81149%
+Filesystem                    Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-lv_root   99G   13G   82G  13% /
+tmpfs                         127G     0  127G   0% /dev/shm
+/dev/sdap1                    485M   39M  421M   9% /boot
+0.64 %
+0.957152%
 0.00%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWJS2-----------------
-Filesystem                                      Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-lv_root                     99G  5.8G   88G   7% /
-tmpfs                                           127G   26M  127G   1% /dev/shm
-/dev/sdap1                                      485M   39M  421M   9% /boot
-/dev/mapper/WLWJS2_datavg-lv_WLWJS2_data        1.1T  106G  898G  11% /WLWJS2_data
-/dev/mapper/WLWJS2_databakvg-lv_WLWJS2_databak  1.1T  174G  830G  18% /WLWJS2_databak
-1.15 %
-1.3075%
+Filesystem                    Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-lv_root   99G  6.6G   87G   8% /
+tmpfs                         127G     0  127G   0% /dev/shm
+/dev/sdap1                    485M   39M  421M   9% /boot
+0.70 %
+0.894102%
 0.00%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWJS4-----------------
-Filesystem                                      Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-lv_root                     99G  6.0G   88G   7% /
-tmpfs                                           127G   23M  127G   1% /dev/shm
-/dev/sday1                                      485M   29M  431M   7% /boot
-/dev/mapper/WLWJS4_datavg-lv_WLWJS4_data        1.3T   45G  1.2T   4% /WLWJS4_data
-/dev/mapper/WLWJS4_databakvg-lv_WLWJS4_databak  1.3T  402G  803G  34% /WLWJS4_databak
+Filesystem                    Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-lv_root   99G  6.0G   88G   7% /
+tmpfs                         127G     0  127G   0% /dev/shm
+/dev/sday1                    485M   29M  431M   7% /boot
 0.01 %
-1.56194%
+0.836902%
 0.00%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWJS5-----------------
 Filesystem                      Size  Used Avail Use% Mounted on
 /dev/mapper/VolGroup00-lv_root   99G  7.2G   87G   8% /
 tmpfs                           119G     0  119G   0% /dev/shm
 /dev/sda1                       485M   29M  431M   7% /boot
-0.00 %
-0.722989%
+0.01 %
+0.829966%
 0.00%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWJKX1-----------------
 Filesystem                               Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00            296G  138G  143G  50% /
+/dev/mapper/VolGroup-LogVol00            296G   99G  183G  35% /
 tmpfs                                    127G   68K  127G   1% /dev/shm
 /dev/sda1                                485M   41M  419M   9% /boot
-/dev/mapper/wlwjkx1_datavg-wlwjkx1_data  739G  503G  199G  72% /wlwjkx1_data
-2.71 %
-25.1866%
-0.02%
+/dev/mapper/wlwjkx1_datavg-wlwjkx1_data  739G  457G  245G  66% /wlwjkx1_data
+0.81 %
+26.0774%
+0.00%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWJKX2-----------------
+Filesystem                               Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00            296G  118G  164G  42% /
+tmpfs                                    127G   72K  127G   1% /dev/shm
+/dev/sda1                                485M   41M  419M   9% /boot
+/dev/mapper/wlwjkx2_datavg-wlwjkx2_data  528G  248G  254G  50% /wlwjkx2_data
+3.38 %
+34.4789%
+0.05%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
+-----------------WLWJKX3-----------------
+Filesystem                               Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00            296G  110G  171G  40% /
+tmpfs                                    127G   68K  127G   1% /dev/shm
+/dev/sda1                                485M   41M  419M   9% /boot
+/dev/mapper/wlwjkx3_datavg-wlwjkx3_data  528G  166G  335G  34% /wlwjkx3_data
+1.20 %
+28.2981%
+0.01%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
+-----------------WLWJKX4-----------------
 Filesystem                               Size  Used Avail Use% Mounted on
 /dev/mapper/VolGroup-LogVol00            296G  119G  163G  43% /
 tmpfs                                    127G   72K  127G   1% /dev/shm
 /dev/sda1                                485M   41M  419M   9% /boot
-/dev/mapper/wlwjkx2_datavg-wlwjkx2_data  528G  282G  219G  57% /wlwjkx2_data
-0.81 %
-31.4353%
-0.02%
------------------WLWJKX3-----------------
-Filesystem                               Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00            296G  113G  168G  41% /
-tmpfs                                    127G   68K  127G   1% /dev/shm
-/dev/sda1                                485M   41M  419M   9% /boot
-/dev/mapper/wlwjkx3_datavg-wlwjkx3_data  528G  158G  344G  32% /wlwjkx3_data
-1.62 %
-29.0066%
+/dev/mapper/wlwjkx4_datavg-wlwjkx4_data  528G  289G  213G  58% /wlwjkx4_data
+1.04 %
+26.1479%
 0.01%
------------------WLWJKX4-----------------
-Filesystem                               Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00            296G  122G  159G  44% /
-tmpfs                                    127G   72K  127G   1% /dev/shm
-/dev/sda1                                485M   41M  419M   9% /boot
-/dev/mapper/wlwjkx4_datavg-wlwjkx4_data  528G  281G  220G  57% /wlwjkx4_data
-1.07 %
-26.2402%
-0.02%
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WLWJKX5-----------------
 Filesystem                               Size  Used Avail Use% Mounted on
-/dev/mapper/VolGroup-LogVol00            296G  139G  142G  50% /
+/dev/mapper/VolGroup-LogVol00            296G  136G  145G  49% /
 tmpfs                                    127G   72K  127G   1% /dev/shm
 /dev/sda3                                485M   41M  419M   9% /boot
-/dev/mapper/wlwjkx5_datavg-wlwjkx5_data  528G  313G  188G  63% /wlwjkx5_data
-0.73 %
-25.1556%
-0.00%
+/dev/mapper/wlwjkx5_datavg-wlwjkx5_data  528G  310G  191G  62% /wlwjkx5_data
+2.04 %
+24.8344%
+0.01%
 ----------------------------------check connection ----------------------------
+Authorized only. All activity will be monitored and reported
+---------------------------------------------------------------
 -----------------WangZhuangWang-----------------
 http://10.255.242.71:1103/Trans/Receiver  OK

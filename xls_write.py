@@ -14,12 +14,28 @@ xls_path = os.path.join(os.getcwd(), '日报模板.xlsx')
 xls_wb = load_workbook(xls_path)
 xls_ws = xls_wb.worksheets[0]
 
-#将列表的内容依次填入表格中
-row_pick = 2
-for cell_val in st.sorted_content:
-    cell = xls_ws.cell(row=row_pick,column=4)
-    cell.value = cell_val
-    row_pick += 1
+# #将列表的内容依次填入表格中
+# row_pick = 2
+# for cell_val in st.sorted_content:
+#     if row_pick == 10:
+#         row_pick = row_pick + 8
+#     cell = xls_ws.cell(row=row_pick,column=4)
+#     cell.value = cell_val
+#     row_pick += 1
+content = st.content_store()
+
+for num in range(2,106):
+    cell = xls_ws.cell(row=num,column=2)
+    if cell.value:
+        for host,results in content.items():
+            if cell.value == host:
+                r = cell.row
+                for result in results:
+                    xls_ws.cell(row=r,column=4).value = result
+                    r += 1
+            content.pop(host)
+            break
+
 
 # 填入结果后，有些单元格格式（线框，字体，填充颜色）有变化，需进行适当调整
 cell_bd = NamedStyle(name="cell_bd")
